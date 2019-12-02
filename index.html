@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- add Angular app -->
+<html ng-app='CavemanApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Holiday Celebrations</title>
+   <!--import Angular  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js" charset="utf-8"></script>
+   <!-- import our app.js file -->
+   <script src="js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!-- add our angular contorller -->
+   <body ng-controller='MainController as ctrl'>
+     <div class="container">
+       <h5>Locations</h5>
+       <h5> {{ ctrl.hello }} </h5>
+       <!-- <form ng-submit='ctrl.createLocation()'>
+          <input type="text" ng-model='ctrl.createForm.name' placeholder="Holiday name">
+          <input type="submit" value="Create New Holiday">
+       </form> -->
+       <!-- <table> -->
+         <!-- loop over the holidays array and create each holiday -->
+         <!-- <tr ng-repeat="holiday in ctrl.holidays">
+          <td ng-dblclick="ctrl.updateCelebrated( holiday )"
+              ng-class="(holiday.celebrated ? 'celebrated' : '' )"
+              ng-mouseover="ctrl.chooseOneHoliday( holiday )"
+          > {{ holiday.name }} Day</td>
+          <td ng-click="ctrl.deleteHoliday(holiday._id)">x</td>
+         </tr>
+       <table> -->
+        <div class='locationTiles'>
+            <table>
+                  
+            </table>
+        </div>
+
+     </div>
+  </body>
+</html>
